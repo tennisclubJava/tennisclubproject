@@ -47,13 +47,6 @@ public class User {
 	@NotNull
 	protected String surname;
 	
-//	@NotNull
-//	protected String address;
-
-	
-
-	@NotNull
-	protected String login;
 
 	protected String passwordHash;
 
@@ -79,11 +72,10 @@ public class User {
 		this.id = id;
 	}
 
-	public User(String name, String surname, String login, String password, String mail, String phone,
+	public User(String name, String surname, String password, String mail, String phone,
 			Date dateOfBirth) {
 		this.name = name;
 		this.surname = surname;
-		this.login = login;
 		this.passwordHash = password;
 		this.mail = mail;
 		this.phone = phone;
@@ -100,13 +92,6 @@ public class User {
 		this.mail = mail;
 	}
 	
-//	public String getAddress() {
-//		return address;
-//	}
-//
-//	public void setAddress(String address) {
-//		this.address = address;
-//	}
 
 	public Long getId() {
 		return id;
@@ -130,14 +115,6 @@ public class User {
 
 	public void setSurname(String surname) {
 		this.surname = surname;
-	}
-
-	public String getLogin() {
-		return login;
-	}
-
-	public void setLogin(String login) {
-		this.login = login;
 	}
 
 	public String getPasswordHash() {
@@ -172,11 +149,10 @@ public class User {
 		this.admin = admin;
 	}
 
-	//// METHODS OF PEOPLE////
-
 	@Override
 	public String toString() {
-		return "User{" + "id=" + id + ", Name='" + name + '\'' + ", Surname='" + surname + '\'' + ", email='" + mail
-				+ '\'' + ", password='" + passwordHash + '\'' + ", login=" + login + '}';
+		return "User [id=" + id + ", mail=" + mail + ", name=" + name + ", surname=" + surname + ", passwordHash="
+				+ passwordHash + ", phone=" + phone + ", dateOfBirth=" + dateOfBirth + ", admin=" + admin + "]";
 	}
+
 }
