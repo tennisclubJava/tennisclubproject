@@ -119,7 +119,6 @@ public class UserDaoImplTest extends AbstractTestNGSpringContextTests {
 		u1.setMail("jacques.henry@mail.com");
 		u1.setName("Henry");
 		u1.setSurname("Jacques");
-		u1.setLogin("jacques.henry");
 		u1.setPasswordHash("blabla");
 		u1.setPhone("+33625362718");
 		u1.setAdmin(false);
@@ -133,7 +132,6 @@ public class UserDaoImplTest extends AbstractTestNGSpringContextTests {
 		u2.setMail("jean.pierre@mail.com");
 		u2.setName("Pierre");
 		u2.setSurname("Jean");
-		u2.setLogin("jean.pierre");
 		u2.setPasswordHash("blabla");
 		u2.setPhone("+33725362718");
 		u2.setAdmin(false);
@@ -147,7 +145,6 @@ public class UserDaoImplTest extends AbstractTestNGSpringContextTests {
 		u3.setMail("mathieu.françois@mail.com");
 		u3.setName("François");
 		u3.setSurname("Mathieu");
-		u3.setLogin("mathieu.françois");
 		u3.setPasswordHash("blabla");
 		u3.setPhone("+33729362718");
 		u3.setAdmin(false);
@@ -164,7 +161,6 @@ public class UserDaoImplTest extends AbstractTestNGSpringContextTests {
 		user.setMail("jean.françois@mail.com");
 		user.setName("François");
 		user.setSurname("jean");
-		user.setLogin("jean.françois");
 		user.setPasswordHash("blabla");
 		user.setPhone("+33720362718");
 		user.setAdmin(false);
@@ -177,7 +173,6 @@ public class UserDaoImplTest extends AbstractTestNGSpringContextTests {
 		user.setMail("jean.louis@mail.com");
 		user.setName("Louis");
 		user.setSurname("Jean");
-		user.setLogin("jean.louis");
 		user.setPasswordHash("blabla");
 		user.setPhone("+33725398718");
 		user.setAdmin(false);

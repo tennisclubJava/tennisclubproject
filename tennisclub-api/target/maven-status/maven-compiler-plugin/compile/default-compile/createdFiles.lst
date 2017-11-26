@@ -8,8 +8,8 @@ com/frenchies/tennisclub/dto/CourtDTO.class
 com/frenchies/tennisclub/dto/CourtCreateDTO.class
 com/frenchies/tennisclub/facade/BookingFacade.class
 com/frenchies/tennisclub/exceptions/UserAuthentificationException.class
-com/frenchies/tennisclub/dto/UserAuthenticateDTO.class
 com/frenchies/tennisclub/facade/UserFacade.class
+com/frenchies/tennisclub/dto/UserAuthenticateDTO.class
 com/frenchies/tennisclub/dto/UserDTO.class
-com/frenchies/tennisclub/dto/BookingCreateDTO.class
 com/frenchies/tennisclub/enums/Hour24.class
+com/frenchies/tennisclub/dto/BookingCreateDTO.class
