@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,  5 skipped,  1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -110,6 +110,40 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.frenchies.tennisclub.BookingFacadeTest" hash-for-method="createBookingTest">createBookingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.frenchies.tennisclub.BookingFacadeTest" hash-for-method="deleteBookingTest">deleteBookingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.frenchies.tennisclub.BookingFacadeTest" hash-for-method="getAllBookingTest">getAllBookingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.frenchies.tennisclub.BookingFacadeTest" hash-for-method="getBookingsByDateTest">getBookingsByDateTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.frenchies.tennisclub.BookingFacadeTest" hash-for-method="getBookingsByUserTest">getBookingsByUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -174,6 +208,49 @@ Method changeType requires 2 parameters but 0 were supplied in the @Test annotat
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.frenchies.tennisclub.BookingFacadeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createBookingTest">
+                  </a> <!-- createBookingTest -->
+                  <span class="method-name">createBookingTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteBookingTest">
+                  </a> <!-- deleteBookingTest -->
+                  <span class="method-name">deleteBookingTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllBookingTest">
+                  </a> <!-- getAllBookingTest -->
+                  <span class="method-name">getAllBookingTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBookingsByDateTest">
+                  </a> <!-- getBookingsByDateTest -->
+                  <span class="method-name">getBookingsByDateTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBookingsByUserTest">
+                  </a> <!-- getBookingsByUserTest -->
+                  <span class="method-name">getBookingsByUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -203,6 +280,7 @@ Method changeType requires 2 parameters but 0 were supplied in the @Test annotat
       &lt;class name=&quot;com.frenchies.tennisclub.service.CourtServiceTest&quot;/&gt;
       &lt;class name=&quot;com.frenchies.tennisclub.service.BeanMappingServiceTest&quot;/&gt;
       &lt;class name=&quot;com.frenchies.tennisclub.service.BookingServiceTest&quot;/&gt;
+      &lt;class name=&quot;com.frenchies.tennisclub.BookingFacadeTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -216,7 +294,7 @@ Method changeType requires 2 parameters but 0 were supplied in the @Test annotat
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (3 classes)</span>
+                <span class="test-name">Surefire test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -242,24 +320,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'mapping')
 data.setCell(0, 2, 'com.frenchies.tennisclub.service.BeanMappingServiceTest')
-data.setCell(0, 3, 68);
+data.setCell(0, 3, 92);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'getAllBookingsLastWeek')
 data.setCell(1, 2, 'com.frenchies.tennisclub.service.BookingServiceTest')
+<<<<<<< HEAD
 data.setCell(1, 3, 11);
+=======
+data.setCell(1, 3, 20);
+>>>>>>> f90907f1099e1200db986edd0462ce6b2ca469d2
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'changeType')
-data.setCell(2, 2, 'com.frenchies.tennisclub.service.CourtServiceTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'createBookingTest')
+data.setCell(2, 2, 'com.frenchies.tennisclub.BookingFacadeTest')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'changeType')
+data.setCell(3, 2, 'com.frenchies.tennisclub.service.CourtServiceTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'deleteBookingTest')
+data.setCell(4, 2, 'com.frenchies.tennisclub.BookingFacadeTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getBookingsByDateTest')
+data.setCell(5, 2, 'com.frenchies.tennisclub.BookingFacadeTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'getBookingsByUserTest')
+data.setCell(6, 2, 'com.frenchies.tennisclub.BookingFacadeTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getAllBookingTest')
+data.setCell(7, 2, 'com.frenchies.tennisclub.BookingFacadeTest')
+data.setCell(7, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 79 ms</span>
+=======
+              <span class="suite-total-time">Total running time: 113 ms</span>
+>>>>>>> f90907f1099e1200db986edd0462ce6b2ca469d2
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -296,17 +402,26 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
+<<<<<<< HEAD
                 <span class="method-start">3004 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class after">
                 <span class="method-name">springTestContextAfterTestClass</span>
                 <span class="method-start">3100 ms</span>
+=======
+                <span class="method-start">2947 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">3034 ms</span>
+>>>>>>> f90907f1099e1200db986edd0462ce6b2ca469d2
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.frenchies.tennisclub.service.BeanMappingServiceTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">springTestContextBeforeTestClass</span>
+<<<<<<< HEAD
                 <span class="method-start">3102 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
@@ -316,11 +431,23 @@ return data;
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.frenchies.tennisclub.service.BeanMappingServiceTest.mapping())</span>
                 <span class="method-start">3105 ms</span>
+=======
+                <span class="method-start">3035 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">3035 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.frenchies.tennisclub.service.BeanMappingServiceTest.mapping())</span>
+                <span class="method-start">3039 ms</span>
+>>>>>>> f90907f1099e1200db986edd0462ce6b2ca469d2
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">mapping</span>
+<<<<<<< HEAD
                 <span class="method-start">3152 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
@@ -330,12 +457,24 @@ return data;
               <div class="configuration-class after">
                 <span class="method-name">springTestContextAfterTestClass</span>
                 <span class="method-start">3230 ms</span>
+=======
+                <span class="method-start">3091 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.frenchies.tennisclub.service.BeanMappingServiceTest.mapping())</span>
+                <span class="method-start">3187 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">3202 ms</span>
+>>>>>>> f90907f1099e1200db986edd0462ce6b2ca469d2
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.frenchies.tennisclub.service.BookingServiceTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">springTestContextBeforeTestClass</span>
+<<<<<<< HEAD
                 <span class="method-start">3231 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
@@ -361,6 +500,102 @@ return data;
               <div class="configuration-class after">
                 <span class="method-name">springTestContextAfterTestClass</span>
                 <span class="method-start">3261 ms</span>
+=======
+                <span class="method-start">3203 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">3203 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3206 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.frenchies.tennisclub.service.BookingServiceTest.getAllBookingsLastWeek())</span>
+                <span class="method-start">3216 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getAllBookingsLastWeek</span>
+                <span class="method-start">3219 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.frenchies.tennisclub.service.BookingServiceTest.getAllBookingsLastWeek())</span>
+                <span class="method-start">3239 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">3242 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.frenchies.tennisclub.BookingFacadeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">3243 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">3243 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3248 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.frenchies.tennisclub.BookingFacadeTest.createBookingTest())</span>
+                <span class="method-start">3248 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">prepareTestBooking</span>
+                <span class="method-start">3251 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createBookingTest</span>
+                <span class="method-start">3396 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.frenchies.tennisclub.BookingFacadeTest.createBookingTest())</span>
+                <span class="method-start">3397 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">deleteBookingTest</span>
+                <span class="method-start">3399 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.frenchies.tennisclub.BookingFacadeTest.deleteBookingTest())</span>
+                <span class="method-start">3399 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">getAllBookingTest</span>
+                <span class="method-start">3400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.frenchies.tennisclub.BookingFacadeTest.getAllBookingTest())</span>
+                <span class="method-start">3400 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">getBookingsByDateTest</span>
+                <span class="method-start">3401 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.frenchies.tennisclub.BookingFacadeTest.getBookingsByDateTest())</span>
+                <span class="method-start">3401 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">getBookingsByUserTest</span>
+                <span class="method-start">3401 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.frenchies.tennisclub.BookingFacadeTest.getBookingsByUserTest())</span>
+                <span class="method-start">3402 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">3402 ms</span>
+>>>>>>> f90907f1099e1200db986edd0462ce6b2ca469d2
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
