@@ -41,8 +41,7 @@ public class BookingCreateDTOValidator implements Validator {
 		if (bookingCreateDTO.isLesson() && bookingCreateDTO.getIdUser2() == null) {
 			bookingCreateDTO.setIdUser2(1L);
 		}
-		if (bookingCreateDTO.isTournament() && bookingCreateDTO.getIdUser1() == null
-				&& bookingCreateDTO.getIdUser2() == null) {
+		if (bookingCreateDTO.isTournament()) {
 			bookingCreateDTO.setIdUser1(1L);
 			bookingCreateDTO.setIdUser2(1L);
 		}

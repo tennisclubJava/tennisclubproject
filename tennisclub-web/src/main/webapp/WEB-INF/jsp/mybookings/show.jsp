@@ -24,6 +24,16 @@
         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
         New booking
     </my:a>
+    <c:if test="${authenticatedUser.admin}">
+	    <my:a href="/booking/newLesson" class="btn btn-primary">
+	        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+	        New Lesson
+	    </my:a>
+	    <my:a href="/booking/newTournament" class="btn btn-primary">
+	        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+	        New Tournament
+	    </my:a>
+    </c:if>
 
     <div class="row">
         <table class="table">

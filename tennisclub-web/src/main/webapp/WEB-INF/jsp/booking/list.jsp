@@ -7,10 +7,18 @@
 
 <my:pagetemplate title="Bookings">
 <jsp:attribute name="body">
-
+	
     <my:a href="/booking/new" class="btn btn-primary">
         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
         New booking
+    </my:a>
+    <my:a href="/booking/newLesson" class="btn btn-primary">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        New Lesson
+    </my:a>
+    <my:a href="/booking/newTournament" class="btn btn-primary">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        New Tournament
     </my:a>
 
     <table class="table">
@@ -36,8 +44,26 @@
                 <td><c:out value="${booking.user2.name} ${booking.user2.surname}"/></td>
                 <td><fmt:formatDate value="${booking.dateOfBooking}" pattern="dd-MM-yyyy"/></td>
                 <td><c:out value="${booking.hourOfBooking}"/></td>
-                <td><c:out value="${booking.lesson}"/></td>
-                <td><c:out value="${booking.tournament}"/></td>
+                <td>
+                 <c:choose>
+                    <c:when test="${booking.lesson}">
+                        <span class="glyphicon glyphicon-ok"> </span>
+                    </c:when>
+                    <c:otherwise>
+                        <span class="glyphicon glyphicon-remove"> </span>
+                    </c:otherwise>
+                    </c:choose>
+            	</td>
+            	<td>
+                 <c:choose>
+                    <c:when test="${booking.tournament}">
+                        <span class="glyphicon glyphicon-ok"> </span>
+                    </c:when>
+                    <c:otherwise>
+                        <span class="glyphicon glyphicon-remove"> </span>
+                    </c:otherwise>
+                    </c:choose>
+            	</td>
                 <td>
                     <my:a href="/booking/view/${booking.idBooking}" class="btn btn-primary">View</my:a>
                 </td>
