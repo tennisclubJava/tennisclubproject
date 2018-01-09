@@ -8,7 +8,7 @@
 <%@ page import="java.util.Date,java.text.SimpleDateFormat,java.text.ParseException"%>
 <%@ page import="java.text.SimpleDateFormat"%>
 
-<my:pagetemplate title="New booking">
+<my:pagetemplate title="New Lesson">
 <jsp:attribute name="body">
 
     <form:form method="post" action="${pageContext.request.contextPath}/booking/create"
@@ -44,31 +44,29 @@
                 <form:errors path="dateOfBooking" cssClass="help-block"/>
             </div>
        </div>
+       
 
 	    <div class="form-group">
-            <form:label path="idUser1" cssClass="col-sm-2 control-label">Player 1</form:label>
+            <form:label path="idUser1" cssClass="col-sm-2 control-label">Teacher</form:label>
             <div class="col-sm-10">
                 <form:select path="idUser1" cssClass="form-control">
-                    <c:if test="${authenticatedUser.admin}">
-	                    <c:forEach items="${users}" var="u">
-	                        <form:option value="${u.id}">${u.surname} ${u.name}</form:option>
-	                    </c:forEach>
-                    </c:if>
-                    <c:if test="${!authenticatedUser.admin}">
-	                    <form:option value="${authenticatedUser.id}">${authenticatedUser.surname} ${authenticatedUser.name}</form:option>
-                    </c:if>
+	                 <c:forEach items="${users}" var="u">
+	                    <c:if test="${u.teacher}">
+	                    	<form:option value="${u.id}">${u.surname} ${u.name}</form:option>
+	                    </c:if>
+	                 </c:forEach>
                 </form:select>
                  <p class="help-block"><form:errors path="idUser1" cssClass="error"/></p>
             </div>
         </div>
-        
-        <div class="form-group">
+
+        <div class="form-group" hidden="hidden">
             <form:label path="idUser2" cssClass="col-sm-2 control-label">Player 2</form:label>
             <div class="col-sm-10">
                 <form:select path="idUser2" cssClass="form-control">
                     <c:forEach items="${users}" var="u">
-                        <c:if test="${!(u.id == authenticatedUser.id) && !(u.admin)}">
-                        	<form:option value="${u.id}">${u.surname} ${u.name}</form:option>
+                        <c:if test="${(u.admin)}">
+                            <form:option value="${u.id}">${u.surname} ${u.name}</form:option>
                         </c:if>
                     </c:forEach>
                 </form:select>
@@ -76,20 +74,12 @@
             </div>
         </div>
         
-        <c:if test="${authenticatedUser.admin}">
-	        <div class="form-group">
-	        	<div class="col-sm-10">
-	        	<div class="form-group">
-	             	<form:checkbox path="lesson" value="lesson" checked="checked"/>Lesson
-	             </div>
-	            <div class="form-group">
-	             	<form:checkbox path="tournament" value="lesson"/>Tournament
-	             </div>
-	        </div>
-        </c:if>
+        <div class="form-group" hidden="hidden">
+	         <form:checkbox path="lesson" value="true" checked="checked"/>Lesson
+	    </div>
         	    
 
-        <button class="btn btn-primary" type="submit">Create booking</button>
+        <button class="btn btn-primary" type="submit">Create Lesson</button>
     </form:form>
     
 

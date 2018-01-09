@@ -112,6 +112,36 @@ public class BookingController {
 		return "booking/new";
 	}
 	
+	/**
+	 * Prepares an empty form. for lesson
+	 *
+	 * @param model
+	 *            data to be displayed
+	 * @return JSP page
+	 */
+	@RequestMapping(value = "/newLesson", method = RequestMethod.GET)
+	public String newBookingLesson(Model model) {
+		log.debug("new()");
+		BookingCreateDTO b = new BookingCreateDTO();
+		model.addAttribute("bookingCreate", b);
+		return "booking/newLesson";
+	}
+	
+	/**
+	 * Prepares an empty form. for tournament
+	 *
+	 * @param model
+	 *            data to be displayed
+	 * @return JSP page
+	 */
+	@RequestMapping(value = "/newTournament", method = RequestMethod.GET)
+	public String newBookingTournament(Model model) {
+		log.debug("new()");
+		BookingCreateDTO b = new BookingCreateDTO();
+		model.addAttribute("bookingCreate", b);
+		return "booking/newTournament";
+	}
+	
 	@ModelAttribute("users")
 	public List<UserDTO> users() {
 		log.debug("users()");
