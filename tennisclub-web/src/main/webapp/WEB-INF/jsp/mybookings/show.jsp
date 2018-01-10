@@ -53,7 +53,14 @@
 	                <td>${b.idBooking}</td>
 	                <td><c:out value="${b.idCourt}"/></td>
 	                <td><c:out value="${b.user1.name} ${b.user1.surname}"/></td>
-	                <td><c:out value="${b.user2.name} ${b.user2.surname}"/></td>
+	                <c:choose>
+		                <c:when test="${!(b.lesson) && !(b.tournament)}">
+		                	<td><c:out value="${b.user2.name} ${b.user2.surname}"/></td>
+		                </c:when>
+	                	<c:otherwise>
+						    <td></td>
+						</c:otherwise>
+	                </c:choose>
 	                <td><fmt:formatDate value="${b.dateOfBooking}" pattern="yyyy-MM-dd"/></td>
 	                <td><c:out value="${b.hourOfBooking}"/></td>
 	                <td>

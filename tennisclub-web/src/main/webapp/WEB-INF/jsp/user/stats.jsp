@@ -47,7 +47,7 @@
 
         <tbody>
             <td>
-                <my:a href="/${end}/stats/${user.id}"><c:out value="${user.name} "/><c:out value="${user.surname}"/> </my:a>
+                <my:a href="/user/stats/${user.id}"><c:out value="${user.name} "/><c:out value="${user.surname}"/> </my:a>
             </td>
             <td>
                  <c:choose>
