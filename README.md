@@ -10,7 +10,7 @@ Corentin Dore
 
 Password and email for Login : 
 
-                Pwd : hanshotfirst  Login:  millenium@falcon.com 
+                Pwd : hanshotsfirst  Login:  millenium@falcon.com 
                 Pwd : thewayyouthink  Login:  love@porgs.com 
                 Pwd : arrgh  Login:  chewie@arrgh.com
                 Pwd : badfeeling  Login:  hello@there.com 
