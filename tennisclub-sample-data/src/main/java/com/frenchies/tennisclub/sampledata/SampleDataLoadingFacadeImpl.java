@@ -93,8 +93,8 @@ public class SampleDataLoadingFacadeImpl implements SampleDataLoadingFacade {
 		log.info("Loaded court.");
 
 		User admin = user("admin", "admin", "Admin", "admin@admin.com", "611775389", date21, false);
-		User HanSolo = user("hanshotfirst", "Han", "Solo", "millenium@falcon.com", "603123456", date12, false);
-		User LukeSkywalker = user("thewayyouthink", "Luke", "Skywlaker", "love@porgs.com", "656738925", date13, true);
+		User HanSolo = user("hanshotsfirst", "Han", "Solo", "millenium@falcon.com", "603123456", date12, false);
+		User LukeSkywalker = user("heismyfather", "Luke", "Skywlaker", "love@porgs.com", "656738925", date13, true);
 		User Chewbacca = user("arrgh", "Chewbacca", "LastWookie", "chewie@arrgh.com", "678093677", date14, false);
 		User ObiwanKenobi = user("badfeeling", "Obiwan", "Kenobi", "hello@there.com", "609874815", date15, true);
 		User R2D2 = user("bip", "R2", "D2", "C3@PO.com", "612345678", date16, false);

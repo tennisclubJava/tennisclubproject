@@ -36,14 +36,19 @@
         </thead>
         <tbody>
             <tr>
-            	<td> As User -> </td>
-                <td>Pwd : hanshotfirst</td> 
+            	<td>As Simple User : </td>
                 <td>Login:  millenium@falcon.com</td>
+                <td>Pwd : hanshotsfirst</td>
             </tr>
             <tr>
-            	<td> As Admin -> </td>    
-                <td>Pwd : admin </td>     
-                <td> Login:  admin@admin.com</td>                       
+                <td>As Teacher : </td>
+                <td>Login:  love@porgs.com</td>
+                <td>Pwd : heismyfather</td>
+            </tr>
+            <tr>
+            	<td>As Admin : </td>
+                <td>Login:  admin@admin.com</td>
+                <td>Pwd : admin </td>
             </tr>
         </tbody>
     </table>
