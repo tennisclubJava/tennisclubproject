@@ -2,13 +2,14 @@ package com.frenchies.tennisclub.mvc.forms;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
 import com.frenchies.tennisclub.dto.BookingCreateDTO;
 import com.frenchies.tennisclub.dto.BookingDTO;
+import com.frenchies.tennisclub.dto.UserDTO;
 import com.frenchies.tennisclub.facade.BookingFacade;
+import com.frenchies.tennisclub.facade.UserFacade;
 
 /**
  * The place for validation checks. Useful for checks involving multiple
@@ -20,6 +21,11 @@ import com.frenchies.tennisclub.facade.BookingFacade;
 public class BookingCreateDTOValidator implements Validator {
 
 	private BookingFacade bookingFacade;
+
+	private UserFacade userFacade;
+	private int cpt = 0;
+	private UserDTO u;
+
 
 	@Override
 	public boolean supports(Class<?> clazz) {
@@ -38,6 +44,39 @@ public class BookingCreateDTOValidator implements Validator {
 			return;
 		if (bookingCreateDTO.getHourOfBooking() == null)
 			return;
+
+//		List<BookingDTO> ListB = bookingFacade.getAllBookings();
+//		for (BookingDTO btemp : ListB) {
+//			if (btemp.getDateOfBooking() == bookingCreateDTO.getDateOfBooking()) {
+//				if (btemp.getHourOfBooking() == bookingCreateDTO.getHourOfBooking()) {
+//					return;
+//				}
+//			}
+//		}
+//
+//		 u = userFacade.getUserById(bookingCreateDTO.getIdUser1());
+//		 List<BookingDTO> ListC = bookingFacade.getBookingsByUser(u);
+//		
+//		 for (BookingDTO btemp : ListC) {
+//		 if (btemp.getDateOfBooking() == bookingCreateDTO.getDateOfBooking()) {
+//		 cpt++;
+//		 }
+//		 }
+//		 if (cpt >= 2) {
+//		 return;
+//		 }
+
+
+		if (bookingCreateDTO.isLesson() && bookingCreateDTO.getIdUser2() == null) {
+			bookingCreateDTO.setIdUser2(1L);
+		}
+		if (bookingCreateDTO.isTournament()) {
+			bookingCreateDTO.setIdUser1(1L);
+			bookingCreateDTO.setIdUser2(1L);
+		}
+
+		// if(!testDuplication(bookingCreateDTO))
+		// errors.rejectValue("dateOfBooking", "BookingCreateDTOValidator.duplication");
 
 	}
 }
