@@ -38,30 +38,6 @@ public class BookingCreateDTOValidator implements Validator {
 			return;
 		if (bookingCreateDTO.getHourOfBooking() == null)
 			return;
-		if (bookingCreateDTO.isLesson() && bookingCreateDTO.getIdUser2() == null) {
-			bookingCreateDTO.setIdUser2(1L);
-		}
-		if (bookingCreateDTO.isTournament()) {
-			bookingCreateDTO.setIdUser1(1L);
-			bookingCreateDTO.setIdUser2(1L);
-		}
-		// if(!testDuplication(bookingCreateDTO))
-		// errors.rejectValue("dateOfBooking", "BookingCreateDTOValidator.duplication");
 
 	}
-
-	// public boolean testDuplication(BookingCreateDTO b) {
-	// List<BookingDTO> listBookingsSameCourt =
-	// bookingFacade.getBookingsByCourt(b.getIdCourt());
-	// for(BookingDTO bTemp : listBookingsSameCourt)
-	// {
-	// if(bTemp.getDateOfBooking()==b.getDateOfBooking()) {
-	// if(bTemp.getHourOfBooking()==b.getHourOfBooking()) {
-	// return false;
-	// }
-	//
-	// }
-	// }
-	// return true;
-	// }
 }

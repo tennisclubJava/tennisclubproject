@@ -24,7 +24,7 @@
                 <p class="help-block"><form:errors path="idCourt" cssClass="error"/></p>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group" hidden="hidden">
             <form:label path="hourOfBooking" cssClass="col-sm-2 control-label"> Hour of your booking ? (Each reservation is for one hour) </form:label>
             <div class="col-sm-10">
                 <form:select path="hourOfBooking" cssClass="form-control">
