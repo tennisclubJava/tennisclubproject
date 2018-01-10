@@ -24,8 +24,8 @@
     <table class="table">
         <thread>
         <tr>
-            <th>Number of Booking</th>
-            <th>Number of Court</th>
+            <th>Booking id</th>
+            <th>Court id</th>
             <th>Player 1</th>
             <th>Player 2</th>
             <th>Booking Date</th>

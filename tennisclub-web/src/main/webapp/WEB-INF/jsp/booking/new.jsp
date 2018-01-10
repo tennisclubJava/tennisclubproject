@@ -74,20 +74,7 @@
                 </form:select>
                 <p class="help-block"><form:errors path="idUser2" cssClass="error"/></p>
             </div>
-        </div>
-        
-        <c:if test="${authenticatedUser.admin}">
-	        <div class="form-group">
-	        	<div class="col-sm-10">
-	        	<div class="form-group">
-	             	<form:checkbox path="lesson" value="lesson" checked="checked"/>Lesson
-	             </div>
-	            <div class="form-group">
-	             	<form:checkbox path="tournament" value="lesson"/>Tournament
-	             </div>
-	        </div>
-        </c:if>
-        	    
+        </div>        	    
 
         <button class="btn btn-primary" type="submit">Create booking</button>
     </form:form>

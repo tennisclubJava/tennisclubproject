@@ -45,11 +45,6 @@ public class BookingCreateDTOValidator implements Validator {
 		if (bookingCreateDTO.getHourOfBooking() == null)
 			return;
 
-		if (bookingCreateDTO.isLesson() || bookingCreateDTO.isTournament()) {
-			bookingCreateDTO.setIdUser1(1L);
-			bookingCreateDTO.setIdUser2(1L);
-		}
-
 //		List<BookingDTO> ListB = bookingFacade.getAllBookings();
 //		for (BookingDTO btemp : ListB) {
 //			if (btemp.getDateOfBooking() == bookingCreateDTO.getDateOfBooking()) {
@@ -84,19 +79,4 @@ public class BookingCreateDTOValidator implements Validator {
 		// errors.rejectValue("dateOfBooking", "BookingCreateDTOValidator.duplication");
 
 	}
-
-	// public boolean testDuplication(BookingCreateDTO b) {
-	// List<BookingDTO> listBookingsSameCourt =
-	// bookingFacade.getBookingsByCourt(b.getIdCourt());
-	// for(BookingDTO bTemp : listBookingsSameCourt)
-	// {
-	// if(bTemp.getDateOfBooking()==b.getDateOfBooking()) {
-	// if(bTemp.getHourOfBooking()==b.getHourOfBooking()) {
-	// return false;
-	// }
-	//
-	// }
-	// }
-	// return true;
-	// }
 }
